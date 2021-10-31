@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Square from './square'
 import Title from './title'
+import Button from './button'
+import LikeButton from './likeButton'
 
 class App extends Component {
   render () {
@@ -11,6 +13,15 @@ class App extends Component {
         {['blue', 'red', 'green'].map(color => (
           <Square key={color} color={color} />
         ))}
+
+        <Button>
+          <span>Componente Children - </span>
+          Botão de Teste
+        </Button>
+
+        <br />
+
+        <LikeButton />
       </div>
     )
   }
